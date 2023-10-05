@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+              <button id="change-theme-btn">Dark</button>
+              <h1>Generate a<br /><span>random password</span></h1>
+              <p>Never use an insecure password again.</p>
+            </div>
+            <button id="generate-btn">Generate passwords</button>
+            <label for="range-input-el" id="length-label">Length: 12</label>
+            <input type="range" min="6" max="18" step="1" id="range-input-el"/>
+            <hr />
+            <div class="passwords">
+                <div class="tooltip">
+                    <span class="tooltiptext" id="pw1-tooltiptext">Copy to clipboard</span>
+                    <input class="password" type="text" id="pw1" readonly="readonly"></input>
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext" id="pw2-tooltiptext">Copy to clipboard</span>
+                    <input class="password" type="text" id="pw2" readonly="readonly"></input>
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext" id="pw3-tooltiptext">Copy to clipboard</span>
+                    <input class="password" type="text" id="pw3" readonly="readonly"></input>
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext" id="pw4-tooltiptext">Copy to clipboard</span>
+                    <input class="password" type="text" id="pw4" readonly="readonly"></input>
+                </div>
+            </div>
+          </div>
+        <script src="index.js"></script>
+    </body>
+</html>
